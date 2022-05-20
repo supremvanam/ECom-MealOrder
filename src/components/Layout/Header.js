@@ -8,7 +8,7 @@ export default function Header(props) {
     <Fragment>
       <header className={styles.header}>
         <h1>Meals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton cartClickHandler={props.cartClickHandler} />
       </header>
       <div className={styles["main-image"]}>
         <img src={mealsImg} alt="A table full of delicious food" />
