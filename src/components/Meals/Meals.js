@@ -1,5 +1,12 @@
-import React from "react";
+import { Fragment } from "react";
+import AvailableMeals from "./AvailableMeals";
+import MealsSummary from "./MealsSummary";
 
 export default function Meals() {
-  return <div>Meals</div>;
+  return (
+    <Fragment>
+      <MealsSummary />
+      <AvailableMeals />
+    </Fragment>
+  );
 }
